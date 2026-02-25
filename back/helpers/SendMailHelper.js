@@ -14,7 +14,7 @@ let DoSendMail = async(to, sub, body)=>{
     try{
         let response = await Transporter.sendMail({
             to : to,
-            from : "tss759048@gmail.com",
+            from : "abhishekpatel71773@gmail.com",
             subject : sub,
             html : body
         })

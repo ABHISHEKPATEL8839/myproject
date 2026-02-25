@@ -17,7 +17,7 @@ let GetAllCity = async(req, res)=>{
     res.send(result);
 }
 let SendMail = async(req, res)=>{
-    await DoSendMail("james.steppingstone@gmail.com", "Hi", `<h2>Hi James....</h2>`);
+    await DoSendMail("amanpatel97529@gmail.com", "Hi", `<h2>Hi aman....</h2>`);
     res.send({success:true});
 }
 
