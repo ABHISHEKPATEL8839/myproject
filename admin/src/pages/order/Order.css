@@ -1,0 +1,20 @@
+.placed, .shipped, .out, .delivered{
+    font-size: 15px;
+    font-weight: normal;
+}
+.placed{
+    background-color: #F4F0E4;
+    color : #000
+}
+.shipped{
+    background-color: #8100D1;
+    color : #FFF
+}
+.out{
+    background-color: #BBCB2E;
+    color : #000
+}
+.delivered{
+    background-color: #F63049;
+    color : #fff
+}

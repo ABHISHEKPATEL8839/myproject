@@ -1,0 +1,35 @@
+.saperator{
+    height: 2px;
+    width: 90%;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+.color{
+    height: 30px;
+    width: 30px;
+    
+    border-radius: 30px;
+    display: inline-block;
+    margin: 5px;
+}
+.red{
+    background-color: rgb(243, 65, 65);
+}
+.black{
+    background-color: black;
+}
+.white{
+    background-color: white;
+}
+.brown{
+    background-color: rgb(70, 28, 20);
+}
+.yellow{
+    background-color: rgb(230, 213, 27);
+}
+.blue{
+    background-color: rgb(81, 72, 239);
+}
+.green{
+    background-color: rgb(130, 239, 72);
+}
