@@ -10,10 +10,6 @@ const ProtactedRoutes = () => {
     let [pic, setPic] = useState("")
     let navigate = useNavigate();
 
-
-    
-
-    
   useEffect(()=>{
     axios
     .get(`${import.meta.env.VITE_API_URL}/profile/profilepic`, { headers : {Authorization : localStorage.getItem("access_user")}})
@@ -63,7 +59,7 @@ const ProtactedRoutes = () => {
                     <div onClick={askImageUpload} style={{height : 69, width : 70, display : showCamera, position : "relative", backgroundColor : "rgba(0, 0, 0, .2)", top : -70, left : 10, textAlign : "center", zIndex : 99}}>
                       <i style={{marginTop : 20}} className='fa fa-camera fa-2x'></i>
                     </div>
-                  
+
                   </div>
                   <div>
                     <small>Hello</small>

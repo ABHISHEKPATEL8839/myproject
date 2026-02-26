@@ -1,6 +1,10 @@
 import Order from "../models/Order.js"
+
+import pdf from "pdf-creator-node";
 import Razorpay from 'razorpay'
-// import { RAZORPAY_KEY, RAZORPAY_SECRET } from "../config/config.js"
+import user from '../models/User.js'
+import Product from '../models/Product.js'
+import createoption from "../helpers/Createrecipt.js"
 
 let rzpy = new Razorpay({
     key_id :process.env.RAZORPAY_KEY,
@@ -21,9 +25,33 @@ let Payment = async(req, res)=>{
 }
 
 let Confirm = async(req, res)=>{
-    // console.log(req.body);
-    // return;
-    // send a mail to custer
+
+
+
+    let result_user=await user.find({_id:req.body.user_id})
+    let result_Product=await Product.find({_id:req.body.Product_id})
+
+let pdfdata=createoption(req.body,result_user[0],result_Product[0])
+
+
+// console.log(req.body)
+// console.log(result_user)
+// console.log(result_Product)
+
+
+
+
+
+
+
+    pdf
+  .create(pdfdata.document, pdfdata.options)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((error) => {
+    console.error("-----------", error);
+  });
     await Order.create(req.body);
     res.send({success:true});
 

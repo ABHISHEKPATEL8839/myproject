@@ -34,6 +34,7 @@ const MyOrders = () => {
                       <th>Payment Mode</th>
                       <th>Status</th>
                       <th>Date</th>
+                      <th>downlod</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -45,6 +46,7 @@ const MyOrders = () => {
                           <td>{item.payment_mode == 1 ? 'Online' : 'COD'}</td>
                           <td>{item.status == 1 ? 'Ordered' : item.status==2 ? 'Shipped' : item.status==3 ? 'Out of Develiery' : 'Delivered'}</td>
                           <td>{useDateView(item.updatedAt)}</td>
+                          <td><a class="fa fa-download" aria-hidden="true"></a></td>
                         </tr>)
                     }
                   </tbody>

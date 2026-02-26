@@ -8,10 +8,8 @@ let useDateView = (d)=>{
     });
     let arr = y.split(" ");
     return arr[2]+"-"+arr[1]+"-"+arr[3]+" "+time;
-    // return time
+   
 
 }
 
 export default useDateView;
-// a = "rohit varma" 
-// a.split(" ")

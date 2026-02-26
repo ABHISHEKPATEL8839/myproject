@@ -24,10 +24,10 @@ import ForgotPasswordUpdate from '../pages/ForgotPasswordUpdate'
 const AllRoutes = () => {
   return (
     <Routes>
+          <Route path="/login" element={<Login />} />
         <Route path='' element={<ShowFooterRoutes />}>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/otp" element={<Otp />} />
           <Route path="/update-password" element={<ForgotPasswordUpdate />} />
