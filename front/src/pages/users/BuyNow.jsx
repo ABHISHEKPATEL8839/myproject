@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {useNavigate, useParams} from 'react-router-dom'
 import axios from 'axios'
-import {API_URL} from '../../config/API'
 const BuyNow = () => {
     let navigate = useNavigate();
     let param = useParams();
@@ -11,7 +10,6 @@ const BuyNow = () => {
     axios
     .get(`${import.meta.env.VITE_API_URL}/profile`, { headers : {Authorization : localStorage.getItem("access_user")}})
     .then(response=>{
-    //   console.log(response.data.result);
       setUser(response.data.result);
     })
   },[])
