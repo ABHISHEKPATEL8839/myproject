@@ -19,7 +19,7 @@ const MyProfile = () => {
   return (
    
         <div className="col-md-9">
-          <div className="alert" style={{backgroundColor : "#a5d4e7ff"}}>
+          <div className="alert" style={{backgroundColor : "#cedde2"}}>
             <h4>Profile Information</h4>
             <NavLink to='/myprofile/edit' className="mx-3">Edit</NavLink>
             <NavLink to='/myprofile/change-password' className="mx-3">Change Password</NavLink>

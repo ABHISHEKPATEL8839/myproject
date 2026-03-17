@@ -28,7 +28,7 @@ const ChangePassword = () => {
     })
   return (
     <div className="col-md-9">
-            <div className="alert" style={{ backgroundColor: "#a5d4e7ff" }}>
+            <div className="alert" style={{ backgroundColor: "#cedde2" }}>
                 <h4>Change Your Password</h4>
                 <NavLink to='/myprofile'>Back</NavLink>
                 <br />

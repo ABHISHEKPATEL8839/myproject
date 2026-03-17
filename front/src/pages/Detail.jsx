@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink, useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios';
-import { API_PATH, API_URL } from '../config/API';
 import Modal from 'react-bootstrap/Modal'
 const Detail = () => {
     let navigate = useNavigate();

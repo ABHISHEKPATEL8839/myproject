@@ -68,7 +68,7 @@ const BuyNow = () => {
         <div className="row">
             <div className="col-md-8">
                 
-                <div className="card p-4" style={{backgroundColor : "#a5d4e7ff"}}>
+                <div className="card p-4" style={{backgroundColor : "#cedde2"}}>
                     <h5 className='p-2 bg-dark text-white'><span className='badge bg-light text-dark'>1</span> Login</h5>
                     <p className='py-2 my-0 mx-2'><i className='fa fa-user'></i> {user.name}</p>
                     <p className='py-2 my-0 mx-2'><i className='fa fa-phone'></i> {user.contact}</p>
@@ -79,7 +79,7 @@ const BuyNow = () => {
                 </div>
             </div>
             <div className="col-md-4">
-                <div className='card p-4' style={{backgroundColor : "#a5d4e7ff"}}>
+                <div className='card p-4' style={{backgroundColor : "#cedde2"}}>
                     <h6>Price Detail</h6>
                     <div className='card p-3' style={{backgroundColor : "#ccc"}}>
                         <div className='d-flex justify-content-between'>

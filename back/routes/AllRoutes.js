@@ -11,6 +11,7 @@ import IsUserLoggedIn from '../util/IsUserLoggedIn.js'
 import AdminRoutes from './AdminRoutes.js'
 import IsAdminLoggedIn from '../util/IsAdminLoggedIn.js'
 import ForgotPasswordRoutes from './ForgotPasswordRoutes.js'
+import  FilterRoutes from './ProductFilterRoute.js'
 import OrderRoutes from './OrderRoutes.js'
 
 
@@ -20,6 +21,7 @@ routes.use("/api/v1/city", CityRoutes);
 routes.use("/api/v1/user", UserRoutes);
 routes.use("/api/v1/category", CategoryRoutes);
 routes.use("/api/v1/subcategory", SubCategoryRoutes);
+routes.use("/api/v1/filter", FilterRoutes);
 routes.use("/api/v1/auth", UserAuthRoutes);
 routes.use("/api/v1/profile", IsUserLoggedIn ,ProfileRoutes);
 routes.use("/api/v1/adminauth", AdminAuthRoutes);

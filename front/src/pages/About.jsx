@@ -2,56 +2,19 @@ import React, { useState } from 'react'
 
 // import { Api_url } from '../config/api'
 import axios from 'axios'
+import WhyShopWithUs from '../components/WhyShopWithUs'
 
 const About = () => {
-    
-   let [msg,setmsg]=useState("")
-  let  send =()=>{
-   axios
-   .get(`${import.meta.env.VITE_Api_url}/city/sendmail`)
-   .then(response=>{
-      console.log(response.data)
-      
-      setmsg(" send successfuly.......")
-   })
-  }
-
-   let checkout = async()=>{
-   
-     axios.get(`${import.meta.env.VITE_Api_url}/city/payment`)
-    .then(response=>{
-       if(response.data.success==true){
-           let option = {
-             key : "rzp_test_Rek8z2OtrReaiV",
-             amount : 100*100,
-             currency : 'INR',
-             order_id : response.data.orderId,
-             handler : async(rzpyRes)=>{
-               console.log(rzpyRes)
-            }
-         }
-          let rzpy = window.Razorpay(option);
-        rzpy.open();
-      }
-    })
-   }
+ 
 
   return (
    <>
+            <WhyShopWithUs/>
       <section className="why_section layout_padding">
          <div className="container">
-            <button  className="btn btn-danger btn-lg" onClick={send}>Email</button>
-            <br/>
-            <p>{msg}</p>
-             <br/>
-            <br/>
-             <button  className="btn btn-danger btn-lg" onClick={checkout}>payment</button>
-           
-            <div className="heading_container heading_center">
-               <h2>
-                  Why Shop With Us
-               </h2>
-            </div>
+          
+
+    
             <div className="row">
                <div className="col-md-4">
                   <div className="box ">
@@ -291,7 +254,8 @@ const About = () => {
             </div>
          </div>
       </section>
-   
+   <br/>
+   <br/>
    
    </>
   )

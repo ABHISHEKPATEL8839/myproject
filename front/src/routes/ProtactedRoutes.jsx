@@ -1,8 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react'
 import { Outlet, useNavigate, NavLink } from 'react-router-dom'
-// import { API_URL, API_PATH } from '../config/API';
-
 const ProtactedRoutes = () => {
     let file = useRef();
     let [showCamera, setShowCamera] = useState("none");
@@ -30,12 +28,10 @@ const ProtactedRoutes = () => {
     }
 
     let askImageUpload = ()=>{
-      // console.log("*********")
       file.current.click();
     }
 
     let doUpload = ()=>{
-      // console.log(file.current.files[0]);
       let filedata = file.current.files[0];
       let MyFormData = new FormData();
       MyFormData.append("image", filedata);
@@ -52,7 +48,7 @@ const ProtactedRoutes = () => {
       <div className="row">
         <div className="col-md-3">
             <input accept=".jpg, .jpeg, .png, image/jpeg, image/png" onChange={doUpload} type='file' ref={file} style={{display : "none"}}/>
-            <div className="alert" style={{backgroundColor : "#a5d4e7ff"}}>
+            <div className="alert" style={{backgroundColor : "#cedde2"}}>
                 <div className='d-flex'>
                   <div style={{height : 80}} onMouseOut={hideCameraIcon} onMouseOver={showCameraIcon}>
                     <img  src={pic} className='img-thumbnail' style={{height : "70px", width : "70px", margin : "0 10px"}} />
@@ -67,7 +63,7 @@ const ProtactedRoutes = () => {
                   </div>
                 </div>
             </div>
-            <div className="alert" style={{backgroundColor : "#a5d4e7ff"}}>
+            <div className="alert" style={{backgroundColor : "#cedde2" }}>
               <ul className='nav flex-column'>
                 <li className='nav-item'>
                   <NavLink to='/myprofile' className='nav-link'>My Profile</NavLink>

@@ -34,9 +34,7 @@ let Confirm = async(req, res)=>{
 let pdfdata=createoption(req.body,result_user[0],result_Product[0])
 
 
-// console.log(req.body)
-// console.log(result_user)
-// console.log(result_Product)
+
 
 
 

@@ -19,7 +19,7 @@ const MyOrders = () => {
  return (
     
             <div className="col-md-9">
-              <div className="alert" style={{backgroundColor : "#a5d4e7ff"}}>
+              <div className="alert" style={{backgroundColor : "##cedde2"}}>
 
                 <h2>Your Orderes</h2>
                 {

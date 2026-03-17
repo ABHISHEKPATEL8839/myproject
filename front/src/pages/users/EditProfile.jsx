@@ -45,7 +45,7 @@ const EditProfile = () => {
 
     return (
         <div className="col-md-9">
-            <div className="alert" style={{ backgroundColor: "#a5d4e7ff" }}>
+            <div className="alert" style={{ backgroundColor: "#cedde2" }}>
                 <h4>Update Your Profile Information</h4>
                 <NavLink to='/myprofile'>Back</NavLink>
                 <br />
@@ -133,11 +133,3 @@ const EditProfile = () => {
 
 export default EditProfile
 
-/*
-
-axios.get("url", {header....}).then
-axios.post("url", formData, {header....}).then
-axios.put("url", formData, {header....}).then
-axios.delete("url", {header....})
-
-*/

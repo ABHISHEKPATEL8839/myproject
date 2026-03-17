@@ -16,9 +16,9 @@ const MakePayment = () => {
                 </div>
             </div>
             <div className="col-md-4">
-                <div className='card p-4' style={{backgroundColor : "#a5d4e7ff"}}>
+                <div className='card p-4' style={{backgroundColor : "##cedde2"}}>
                     <h6>Price Detail</h6>
-                    <div className='card p-3' style={{backgroundColor : "#ccc"}}>
+                    <div className='card p-3' style={{backgroundColor : "#cedde2"}}>
                         <div className='d-flex justify-content-between'>
                         <p>Price</p>
                         <p>1000.00</p>
